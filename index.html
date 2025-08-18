@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Portfolio + Fun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <strong>My Portfolio</strong>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#fun">Fun</a></li>
+      <li><a href="#contact">Links</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="hero card" id="about">
+    <div>
+      <h1>こんにちは、<br/>Webをつくる人です。</h1>
+      <p class="muted">ここは自己紹介と、ちょっと遊べるミニアプリを混ぜたポートフォリオです。</p>
+      <span class="tag">#Frontend #VanillaJS #GitHubPages</span>
+    </div>
+    <div class="card">
+      <h2>Now</h2>
+      <p class="muted">学習中のことや最近のトピックを書きます。</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>HTML/CSS <div class="bar"><span style="width:85%"></span></div></li>
+      <li>JavaScript <div class="bar"><span style="width:75%"></span></div></li>
+      <li>Git/GitHub <div class="bar"><span style="width:70%"></span></div></li>
+    </ul>
+  </section>
+
+  <section id="works">
+    <h2>Works</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Sample Project 1</h3>
+        <p class="muted">簡単なLandingページ。</p>
+      </article>
+      <article class="card">
+        <h3>Sample Project 2</h3>
+        <p class="muted">Canvasでアニメーション。</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="fun">
+    <h2>Fun Zone</h2>
+    <div class="grid">
+      <!-- Clock -->
+      <article class="card">
+        <h3>⏰ Digital Clock</h3>
+        <p class="muted">現在時刻を1秒ごとに更新します。</p>
+        <div id="clock" class="clock">--:--:--</div>
+      </article>
+
+      <!-- Omikuji -->
+      <article class="card">
+        <h3>🎲 おみくじ</h3>
+        <p class="muted">今日の運勢を引いてみよう。</p>
+        <button class="btn" id="omikujiBtn">おみくじを引く</button>
+        <p id="omikujiResult"></p>
+      </article>
+
+      <!-- ToDo -->
+      <article class="card">
+        <h3>📝 ToDo</h3>
+        <div class="todo">
+          <div style="display:flex;gap:8px">
+            <input id="todoInput" type="text" placeholder="タスクを入力" />
+            <button id="addBtn">追加</button>
+          </div>
+          <p class="muted">未完了</p>
+          <ul id="todoList"></ul>
+          <p class="muted">完了</p>
+          <ul id="doneList"></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Links</h2>
+    <p>GitHub：<a href="https://github.com/yourname" target="_blank">yourname</a></p>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Your Name — Built with HTML/CSS/JS
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
